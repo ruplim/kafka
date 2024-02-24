@@ -1,0 +1,15 @@
+{
+  "fields": [
+    {
+      "name": "teamId",
+      "type": "string"
+    },
+    {
+      "name": "teamName",
+      "type": "string"
+    }
+  ],
+  "name": "NestedTeam",
+  "namespace": "com.honer.message",
+  "type": "record"
+}

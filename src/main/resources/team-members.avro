@@ -1,0 +1,35 @@
+{
+  "fields": [
+    {
+      "name": "teamId",
+      "type": "string"
+    },
+    {
+      "name": "teamName",
+      "type": "string"
+    },
+    {
+      "name": "members",
+      "type": {
+        "items": {
+          "fields": [
+            {
+              "name": "memberId",
+              "type": "string"
+            },
+            {
+              "name": "memberName",
+              "type": "string"
+            }
+          ],
+          "name": "members",
+          "type": "record"
+        },
+        "type": "array"
+      }
+    }
+  ],
+  "name": "NestedTeam",
+  "namespace": "com.honer.message",
+  "type": "record"
+}

@@ -1,0 +1,30 @@
+spring:
+  kafka:
+    bootstrap-servers: pkc-9q8rv.ap-south-2.aws.confluent.cloud:9092
+    properties:
+      basic:
+        auth:
+          credentials.source: USER_INFO
+          user.info: AIPCCN2BVJBUKMFP:njubmjhxOTKD9aSvA4wXnV4Ds7Dms2SakCUtzYvO7Yf+XAgRsj7fcewUr0l1RAw4  
+      security:
+        protocol: SASL_SSL
+      schema:
+        registry:
+          url: https://psrc-lo3do.us-east-2.aws.confluent.cloud
+      sasl:
+        jaas:
+          config: org.apache.kafka.common.security.plain.PlainLoginModule required username='DXSQL2RJUVLOBCZV' password='A3+0JZUSHhtSYw4u2ATvytOeLHhko8DTBgNr4ZFLHCcet5Vf3W/MuRsWRTQ7bG3f';
+        mechanism: PLAIN
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+    consumer:
+      group-id: group_id_1
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      properties:
+        specific:
+          avro:
+            reader: false
+      
