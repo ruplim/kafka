@@ -5,7 +5,7 @@ spring:
       basic:
         auth:
           credentials.source: USER_INFO
-          user.info: AIPCCN2BVJBUKMFP:njubmjhxOTKD9aSvA4wXnV4Ds7Dms2SakCUtzYvO7Yf+XAgRsj7fcewUr0l1RAw4  
+          user.info: AIPCCN2BVJBUKMFP:njubmjhxOTKD9aSvA4wXnV4Ds7Dms2SakCUtzYvO7Yf+XAgRsj7fcewUr0l1RAw420  
       security:
         protocol: SASL_SSL
       schema:
@@ -13,7 +13,7 @@ spring:
           url: https://psrc-lo3do.us-east-2.aws.confluent.cloud
       sasl:
         jaas:
-          config: org.apache.kafka.common.security.plain.PlainLoginModule required username='DXSQL2RJUVLOBCZV' password='A3+0JZUSHhtSYw4u2ATvytOeLHhko8DTBgNr4ZFLHCcet5Vf3W/MuRsWRTQ7bG3f';
+          config: org.apache.kafka.common.security.plain.PlainLoginModule required username='DXSQL2RJUVLOBCZV' password='A3+0JZUSHhtSYw4u2ATvytOeLHhko8DTBgNr4ZFLHCcet5Vf3W/MuRsWRTQ7bG3f20';
         mechanism: PLAIN
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
